@@ -407,6 +407,8 @@ body {
   }
 
   .reset-btn {
+    right: auto;
+    left: auto;
     bottom: 4rem;
   }
 }
