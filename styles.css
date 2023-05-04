@@ -413,10 +413,10 @@ body {
   }
 
   .play-again-mobile {
-  padding: 5px 40px;
-  margin-top: 10px;
-  font-size: 0.8em;
-  color: var(--dark-text);
-  cursor: pointer;
-}
+    padding: 5px 40px;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: var(--dark-text);
+    cursor: pointer;
+  }
 }
