@@ -6,7 +6,7 @@ The game was developed using HTML, CSS, and JavaScript. It features a simple use
 
 **How to Play**
 
-    Visit https://new-rock-paper-scissors.netlify.app.
+    Visit https://new-rock-paper-scissors.netlify.app
     Click on the button corresponding to your choice (Rock, Paper, Scissors, Lizard, or Spock).
     The computer will generate its own choice, and the winner will be displayed, along with the current score.
     If you want to play again, click on the "Play Again" button.
