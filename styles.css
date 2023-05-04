@@ -204,8 +204,7 @@ body {
   cursor: auto;
 }
 
-.play-again,
-.play-again-mobile {
+.play-again {
   padding: 5px 40px;
   margin-top: 10px;
   font-size: 0.8em;
@@ -317,7 +316,7 @@ body {
   .score-board {
     font-size: 0.5rem;
     padding: 10px;
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 5px;
   }
 
@@ -404,6 +403,7 @@ body {
     right: auto;
     left: auto;
     bottom: 8rem;
+    margin-top: 1rem;
   }
 
   .reset-btn {
@@ -411,4 +411,12 @@ body {
     left: auto;
     bottom: 4rem;
   }
+
+  .play-again-mobile {
+  padding: 5px 40px;
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: var(--dark-text);
+  cursor: pointer;
+}
 }
