@@ -7,6 +7,7 @@ const btnRules = document.querySelector(".rules-btn");
 const btnReset = document.querySelector(".reset-btn");
 const btnClose = document.querySelector(".close-modal");
 const modalRules = document.querySelector(".modal");
+const btnTest = document.querySelector(".test-btn");
 
 // Setting initial scores
 let userScoreValue = localStorage.getItem("userScore") || 0;
@@ -131,9 +132,38 @@ function handlePlayAgain() {
 function handleReset() {
   userScore.textContent = 0;
   computerScore.textContent = 0;
+  userScoreValue = 0;
+  computerScoreValue = 0;
   localStorage.removeItem("userScore");
   localStorage.removeItem("computerScore");
 }
+
+//
+async function getData() {
+  const response = await fetch("https://catfact.ninja/fact");
+  const data = await response.json();
+  return data;
+}
+
+const throttle = (fn, limit) => {
+  let flag = true;
+  return function () {
+    console.log("throttle hit");
+    if (flag) {
+      fn.apply(this, arguments).then((data) => {
+        setTimeout(() => {
+          console.log(data);
+        }, 5000);
+      });
+      flag = false;
+      setTimeout(() => {
+        flag = true;
+      }, limit);
+    }
+  };
+};
+
+btnTest.addEventListener("click", throttle(getData, 5000));
 
 // Adding event listeners to choices and buttons
 choices.forEach((choice) => choice.addEventListener("click", handleUserChoice));

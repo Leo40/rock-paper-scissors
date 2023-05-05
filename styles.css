@@ -214,7 +214,8 @@ body {
 
 /* Reset and rules buttons */
 .rules-btn,
-.reset-btn {
+.reset-btn,
+.test-btn {
   font-family: inherit;
   position: absolute;
   cursor: pointer;
@@ -237,6 +238,10 @@ body {
 
 .reset-btn {
   right: 10rem;
+}
+
+.test-btn {
+  right: 25rem;
 }
 
 /* Rules modal */
